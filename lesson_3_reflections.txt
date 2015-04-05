@@ -11,3 +11,9 @@ Describe the differences between forks, clones, and branches. When would you use
 		you would fork when you want to copy someone else's work
 		clone when you copy whatever repository you need.
 		branch when you want to experiment.
+
+What is the benefit of having a copy of the last known state of the remote stored locally?
+	you can see how far you have changed it from the latest stable version or see what the others have been doing to keep your code up to date with theirs.
+
+How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+	updating between us would be easier in a sense not needing to push and pull all the time but that's about it. We won't have revision and commits and history and verion control over our work so it's less fruitful.
