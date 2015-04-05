@@ -1,0 +1,8 @@
+
+
+What happens when you initialize a repository?
+	it creates a hidden folder of git holding the changes
+Why do you need to do it?
+	otherwise we won't be able to use the git commands
+How is the staging area different from the workign directory and the repository? What value do you think it offers?
+	the staging area allows you to reflect and choose which files to add each time to keep commits small and logical, give you flexibility

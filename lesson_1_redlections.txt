@@ -2,6 +2,11 @@ git commands:
 	- git init 
 		done inside a directory and turns that directory to a repository
 		it does not create a first commit
+	- git add <file name>
+		adds the file to the "staging area" and those files inside will
+		be commited when we do the commit
+	- git commit 
+		opens the editor chosen to add a message
 	- git clone <url>
 		will clone the whole repository.
 	- git log 
