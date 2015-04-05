@@ -1,27 +1,71 @@
 git commands:
+	
 	- git init 
 		done inside a directory and turns that directory to a repository
 		it does not create a first commit
+	
 	- git add <file name>
 		adds the file to the "staging area" and those files inside will
 		be commited when we do the commit
+	
 	- git commit 
 		opens the editor chosen to add a message
+	
 	- git clone <url>
 		will clone the whole repository.
+	
 	- git log 
 		shows the log of the commits, 'q' for quit.
-
+		shows them by order created.
+		
 		-- stat
 			shows also the stats of the changes between each commit.
 			with files changed, insertions and deletions.
+		
+		-- graph --online <branch name> <branch name>
+			will create a oneline name graph showing all the commits with the branches in them as a list on oneliners.
+
+		- n <num>
+			will show that number of recent commits
+	
 	- git status
 		shows what files changed since the last commit
+	
+	- git diff
+		using this without commit ID's will compare the working directory with the staging area
+
+		- git diff --staged shows only the differences in the staged
+	
 	- git diff <commit num 4 digits or more> <the newer commit>
 		shows the difference between the two version.
-	-git checkout <commit num>
+	
+	- git show <commit>
+		compares the commit to it's parent
+
+	- git branch
+		shows the current branches in the repository
+
+		- git branch -d <branch name>
+			will delete that branch label, making all commits made non accessiable if they were not merged.
+	
+	- git branch <name> 
+		will create that name's branch, then using checkout and name
+		will change the current working branch to name
+	
+	- git checkout <commit num or branch name>
 		will revert files to that commit num (usable if you need to check where a new bug was introduced but not sure). Does not change the other commits and thus you can go back to the most updates commit.
 
+		- git checkout -b <new branch name>
+			will save the current new branch and commit from that point of time
+
+	- git merge <branch name> <branch name>
+		will merge the two togather while creating a new commit with the checked-out branch as the reciever and the one moving to the new commit
+
+		- git merge --abort
+			will abort the merge if there is conflict
+	
+	- git reset --hard   		WARNING !!!
+		this command will revert ALL changes made in staging and working directory thus delete any changes made not commited !!!
  
 
 
