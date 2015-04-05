@@ -1,0 +1,54 @@
+git commands:
+	- git init 
+		done inside a directory and turns that directory to a repository
+		it does not create a first commit
+	- git clone <url>
+		will clone the whole repository.
+	- git log 
+		shows the log of the commits, 'q' for quit.
+
+		-- stat
+			shows also the stats of the changes between each commit.
+			with files changed, insertions and deletions.
+	- git status
+		shows what files changed since the last commit
+	- git diff <commit num 4 digits or more> <the newer commit>
+		shows the difference between the two version.
+	-git checkout <commit num>
+		will revert files to that commit num (usable if you need to check where a new bug was introduced but not sure). Does not change the other commits and thus you can go back to the most updates commit.
+
+ 
+
+
+
+
+REFLECTIONS:
+How did viewing a diff between two version of a file help you see the bug that was introduced?
+
+	By seeing the two lines i could compare them easily and see what has changed. If it made sense that it was an ok change but if it didn't then that would be our problem.
+
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+
+	It makes you more efficient because you don't need to search big files for changes to your code and allows you to see exactly what was changed and when to track a bug in your code.
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google docs does?
+
+	Pros:
+	- you choose when it is logical to you and thus reflect changes you can follow.
+	- not too much of commits and versions to look through
+
+	Cons:
+	- the changes are not necessarily logical to everyone else thus it might be hard to follow.
+	- commits are personal and could be too big
+
+How can you use the commands git log and git diff to view the history of files?
+	
+	using log you see the different commits with their relative changes if you use --stat and later diff you can view changes in a more precise manner
+
+How might using version control make you more confident to make changes that could break something?
+
+	by using version changes you are able to jump back to previous commits and see where something changed so you won't break something  that easily.
+
+What do you want to try using Git for?
+	
+	for programming ofcourse :D ! 
